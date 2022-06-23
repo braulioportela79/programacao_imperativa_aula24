@@ -6,6 +6,7 @@ Nosso objeto aluno terá o método calcularMedia que retorna a média de suas no
 um método chamado faltas, que simplesmente aumenta o número de faltas em 1.
 */
 
+
 class Aluno {
     constructor(nome, faltas, notas) {
         this.nome = nome;
