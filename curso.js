@@ -6,7 +6,6 @@ Crie o método que permite adicionar alunos à lista do curso, ou seja, quando c
 método em nosso objeto curso, deverá adicionar um aluno a mais na propriedade lista de estudantes do objeto curso.
 */
 
-
 let Aluno = require('./aluno');
 
 let Curso = {

@@ -12,7 +12,6 @@ Crie o método que permite adicionar alunos à lista do curso, ou seja, quando c
 método em nosso objeto curso, deverá adicionar um aluno a mais na propriedade lista de estudantes do objeto curso.
 */
 
-
 let Curso = require('./curso');
 
 // Adicionar Alunos
@@ -43,11 +42,11 @@ mediaNotaAlunos(Curso.estudantes);
 
 // Adicionar Falta
 
-let adicionarFalta = (obj, nomee) => {
-    let aluno = obj.filter(e => e.nome == nomee);
-    console.log(`O aluno ${nomee} tem ${aluno[0].faltas} falta(s).`)
+let adicionarFalta = (obj, nome) => {
+    let aluno = obj.filter(e => e.nome == nome);
+    console.log(`O aluno ${nome} tem ${aluno[0].faltas} falta(s).`)
     aluno[0].adiconarFaltas()
-    console.log(`Adicionada falta para o aluno ${nomee}. Número de falta(s) atual: ${aluno[0].faltas}.`)
+    console.log(`Adicionada falta para o aluno ${nome}. Número de falta(s) atual: ${aluno[0].faltas}.`)
 };
 
 adicionarFalta(Curso.estudantes, 'Thais Abreu');
