@@ -29,7 +29,7 @@ Curso.adicionarAluno('Thais Abreu', 4, [7, 10, 6]);
 
 // Média dos Alunos
 
-Curso.mediaNotaAlunos(Curso.estudantes)
+Curso.mediaNotaAlunos(Curso.estudantes);
 
 // Adicionar Falta
 
