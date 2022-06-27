@@ -29,24 +29,8 @@ Curso.adicionarAluno('Thais Abreu', 4, [7, 10, 6]);
 
 // Média dos Alunos
 
-let mediaNotaAlunos = obj => {
-    let arrayMedias = obj.map(e => e.calcularMedia());
-    let somaMedias = 0;
-    for (let i = 0; i < arrayMedias.length; i++) {
-        somaMedias += arrayMedias[i] / arrayMedias.length;
-    };
-    console.log(`A média total de notas dos alunos é ${somaMedias.toFixed(2)}.`);
-};
-
-mediaNotaAlunos(Curso.estudantes);
+Curso.mediaNotaAlunos(Curso.estudantes)
 
 // Adicionar Falta
 
-let adicionarFalta = (obj, nome) => {
-    let aluno = obj.filter(e => e.nome == nome);
-    console.log(`O aluno ${nome} tem ${aluno[0].faltas} falta(s).`)
-    aluno[0].adiconarFaltas()
-    console.log(`Adicionada falta para o aluno ${nome}. Número de falta(s) atual: ${aluno[0].faltas}.`)
-};
-
-adicionarFalta(Curso.estudantes, 'Thais Abreu');
+Curso.adicionarFalta(Curso.estudantes, 'Thais Abreu');
