@@ -14,7 +14,7 @@ class Aluno {
         this.calcularMedia = () => {
             let media = this.notas.reduce((acc, cur) => {
                 return acc + cur;
-            });
+            }, 0);
             media = media / this.notas.length;
             return media;
         };
